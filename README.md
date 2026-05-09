@@ -19,8 +19,12 @@ This repository follows the **Open Plugins** layout at the **repo root** ([open-
 | [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json) | Plugin manifest (name, version, metadata) |
 | [`rules/`](rules/) | `.mdc` rules (accessibility trigger, token efficiency, fintech UI, etc.) |
 | [`skills/`](skills/) | `*/SKILL.md` — financial-calculations, accessibility-reviewer, mobile-usability-reviewer, qa-tester, seo-specialist, ux-writer |
-| [`agents/`](agents/) | Optional agent personas (`.md`) |
+| [`agents/`](agents/) | Agent personas (`.md`); each agent **binds to** the `skills/` it must read before answering (see each file’s "Required skills" section) |
 | [PUBLISH.md](PUBLISH.md) | Cursor Marketplace and directory submission notes |
+
+### Agents and skills
+
+**Agents do not run skills automatically** in the model — they instruct the model to **read** the linked `skills/.../SKILL.md` files first. Open those paths (or use `/skill-name` if your Cursor build exposes skills) so financial, a11y, and QA reviews stay aligned with the packaged skills.
 
 ### Included vs omitted (source: internal monorepo)
 
