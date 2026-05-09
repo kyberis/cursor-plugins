@@ -2,7 +2,7 @@
 
 ## Cursor Marketplace (official)
 
-1. Push **only this plugin directory** to a **public** GitHub repository (not the whole monorepo unless you intend to open-source all of it).
+1. Keep this **public** Git repository as the plugin root (rules/skills/agents at top level—not nested in a subfolder).
 2. Update `.cursor-plugin/plugin.json` → `repository` (and optional `homepage`) to match the repo URL.
 3. Confirm every rule/skill/agent file has valid YAML frontmatter ([reference](https://cursor.com/docs/reference/plugins)).
 4. Test locally via `~/.cursor/plugins/local` (see README).
@@ -11,6 +11,8 @@
 ## cursor.directory (community)
 
 After the repo is public, you may list it on **https://cursor.directory** for extra discovery (optional; not a substitute for Marketplace submission).
+
+**Layout:** [cursor.directory](https://cursor.directory) expects [Open Plugins](https://open-plugins.com) component paths at the **repository root** (`rules/*.mdc`, `skills/*/SKILL.md`, `agents/*.md`, etc.). This repo is structured that way; do not nest the plugin in a subfolder.
 
 ## Team-only distribution
 
