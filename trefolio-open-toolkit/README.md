@@ -6,9 +6,11 @@ Cursor plugin: rules, skills, and agents for building **portfolio / fintech web 
 
 ## Repository layout
 
-Publish **this directory** as its own public Git repository for the [Cursor Marketplace](https://cursor.com/marketplace/publish) (recommended). The manifest lives at [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json).
+This toolkit lives in the standalone repo **[github.com/kyberis/cursor-plugins](https://github.com/kyberis/cursor-plugins)** at `trefolio-open-toolkit/`. The manifest is [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json).
 
-Inside the monorepo `stocktracker`, this folder lives at `cursor-plugins/trefolio-open-toolkit/`.
+In the **trefolio** monorepo ([stocktracker](https://github.com/kyberis/stocktracker)), that repo is attached as a **submodule** at `cursor-plugins/` (so this path is `cursor-plugins/trefolio-open-toolkit/` after clone with `--recurse-submodules`).
+
+Submit the **[cursor-plugins](https://github.com/kyberis/cursor-plugins)** repository URL to the [Cursor Marketplace](https://cursor.com/marketplace/publish) (not the whole stocktracker monorepo).
 
 ## Contents
 
@@ -30,8 +32,6 @@ Inside the monorepo `stocktracker`, this folder lives at `cursor-plugins/trefoli
 
 - Product-specific integrations (IdP, Stripe internals, broker parsers, hardware, social graph)
 - Rules tied to one deployment (`landing-page`, `demo-page`, internal cron registry, etc.)
-
-Update `repository` in `plugin.json` once your GitHub repo exists.
 
 ## Local testing
 

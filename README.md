@@ -1,9 +1,19 @@
 # Cursor Marketplace plugins
 
-Source bundles intended for publication as [Cursor plugins](https://cursor.com/docs/plugins).
+Public repo: **[github.com/kyberis/cursor-plugins](https://github.com/kyberis/cursor-plugins)** — Cursor plugin bundles for the trefolio ecosystem.
 
 | Directory | Description |
 |-----------|-------------|
-| [`trefolio-open-toolkit/`](trefolio-open-toolkit/) | Public toolkit (rules, skills, agents). Copy or submodule into its own GitHub repo before Marketplace submission. |
+| [`trefolio-open-toolkit/`](trefolio-open-toolkit/) | Rules, skills, and agents for portfolio/fintech web apps ([Marketplace publish](https://cursor.com/marketplace/publish)). |
 
-The authoritative `.cursor/skills` and `.cursor/rules` for day-to-day work on this monorepo remain under [`.cursor/`](../.cursor/).
+## trefolio (stocktracker) monorepo
+
+This repository is linked as a **Git submodule** at `cursor-plugins/` inside [kyberis/stocktracker](https://github.com/kyberis/stocktracker). Clone with submodules:
+
+```bash
+git clone --recurse-submodules https://github.com/kyberis/stocktracker.git
+# or after clone:
+git submodule update --init --recursive
+```
+
+Day-to-day Cursor rules for core product work remain in the main repo under `.cursor/` (not this submodule).

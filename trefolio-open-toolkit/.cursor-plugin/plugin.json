@@ -19,5 +19,6 @@
     "name": "Marcos Suarez",
     "email": "suarez84@gmail.com"
   },
-  "repository": "https://github.com/kyberis/trefolio-open-toolkit"
+  "homepage": "https://github.com/kyberis/cursor-plugins/tree/main/trefolio-open-toolkit",
+  "repository": "https://github.com/kyberis/cursor-plugins"
 }
